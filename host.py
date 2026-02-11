@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import anthropic
 
 client = anthropic.Anthropic(
-    api_key="ms-6604cae5-d73b-4fb4-9e56-c5d74b461eaa", # 请替换成您的ModelScope Access Token
+    api_key="", # 请替换成您的ModelScope Access Token
     base_url="https://api-inference.modelscope.cn")
 
 app = Flask(__name__)
@@ -32,3 +32,4 @@ def wenti():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
